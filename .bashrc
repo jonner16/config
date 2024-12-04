@@ -152,6 +152,10 @@ rebase(){
     jj git fetch && jj rebase -s jonah-root -d main@origin
 }
 
+rebasei(){
+    jj git fetch && jj rebase --ignore-immutable -s jonah-root -d main@origin
+}
+
 rebaseon(){
     jj git fetch && jj rebase -s $* -d main@origin
 }
